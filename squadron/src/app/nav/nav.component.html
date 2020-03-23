@@ -1,3 +1,21 @@
-<p>
-  nav works!
-</p>
+<nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+  <a class="navbar-brand" [routerLink]="''">Squadron</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+      <div class="navbar-nav ml-auto">
+          <a class="nav-item nav-link" [routerLink]="''" routerLinkActive="active"
+              [routerLinkActiveOptions]="{exact:true}">Home</a>
+          <a class="nav-item nav-link" [routerLink]="'/demo'" routerLinkActive="active"
+              [routerLinkActiveOptions]="{exact:true}">Demo</a>
+          <a class="nav-item nav-link" [routerLink]="'/tips'" routerLinkActive="active"
+              [routerLinkActiveOptions]="{exact:true}">Tips</a>
+              <a class="nav-item nav-link" [routerLink]="'/phone'" routerLinkActive="active"
+              [routerLinkActiveOptions]="{exact:true}">Phone</a>
+              <a class="nav-item nav-link" [routerLink]="'/admin'" routerLinkActive="active"
+              [routerLinkActiveOptions]="{exact:true}">Admin</a>
+      </div>
+  </div>
+</nav>

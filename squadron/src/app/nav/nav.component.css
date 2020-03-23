@@ -1,0 +1,19 @@
+.navbar-brand{
+    font-family: 'Roboto', sans-serif;
+    font-size: 2em;
+    color: black;
+}
+
+.navbar{
+    position: absolute;
+    width: 100vw;
+}
+
+.nav-item{
+    color: black !important;
+    text-align: right;
+}
+
+.active{
+    font-weight: 900;
+}
