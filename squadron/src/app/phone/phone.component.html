@@ -2,28 +2,28 @@
   <div class="container-fluid">
     <div class="row">
       <div class="col-4 offset-4">
-        <input class="phoneInput" type="text" id="phoneNumber" name="phoneNumber">
+        <input class="phoneInput" type="text" id="phoneNumber" name="phoneNumber" [(ngModel)]="phoneNumber" disabled>
       </div>
     </div>
     <div class="row">
       <div class="button-row offset-4">
-        <button>1</button>
-        <button>2</button>
-        <button>3</button>
+        <button (click)="buttonClicked(1)">1</button>
+        <button (click)="buttonClicked(2)">2</button>
+        <button (click)="buttonClicked(3)">3</button>
       </div>
     </div>
     <div class="row">
       <div class="button-row offset-4">
-        <button>4</button>
-        <button>5</button>
-        <button>6</button>
+        <button (click)="buttonClicked(4)">4</button>
+        <button (click)="buttonClicked(5)">5</button>
+        <button (click)="buttonClicked(6)">6</button>
       </div>
     </div>
     <div class="row">
       <div class="button-row offset-4">
-        <button>7</button>
-        <button>8</button>
-        <button>9</button>
+        <button (click)="buttonClicked(7)">7</button>
+        <button (click)="buttonClicked(8)">8</button>
+        <button (click)="buttonClicked(9)">9</button>
       </div>
     </div>
     <div class="row">

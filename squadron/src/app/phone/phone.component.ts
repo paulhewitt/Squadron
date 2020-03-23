@@ -8,8 +8,13 @@ import { Component, OnInit } from '@angular/core';
 export class PhoneComponent implements OnInit {
 
   constructor() { }
+  phoneNumber = '';
 
   ngOnInit() {
+  }
+
+  buttonClicked(addNumber) {
+    this.phoneNumber = this.phoneNumber + addNumber;
   }
 
 }
