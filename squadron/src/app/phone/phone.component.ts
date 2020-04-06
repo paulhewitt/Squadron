@@ -21,6 +21,7 @@ export class PhoneComponent implements OnInit {
   }
 
   buttonClicked(addNumber) {
+    this.correctNumber = true;
     this.phoneNumber = this.phoneNumber + addNumber;
   }
 
@@ -52,10 +53,10 @@ export class PhoneComponent implements OnInit {
 
   startTimer() {
     this.interval = setInterval(() => {
-      if (this.callTime > 0) {
+      if (this.callTime > 1) {
         this.callTime--;
       } else {
-        this.callTime = 0;
+        this.endCall();
       }
     }, 1000);
   }
@@ -63,6 +64,8 @@ export class PhoneComponent implements OnInit {
   endCall() {
     this.isActiveCall = false;
     this.callTime = 60;
+    this.phoneNumber = '';
+    clearInterval(this.interval);
   }
 
 }

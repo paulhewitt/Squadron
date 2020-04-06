@@ -2,7 +2,7 @@
   <div class="container-fluid">
     <div class="row">
       <div *ngIf="isActiveCall" class="col-2 offset-5">
-        <p class="timer">00:{{callTime}}</p>
+        <p class="timer">{{callTime}}</p>
       </div>
       <div class="col-lg-4 offset-lg-4 col-10 offset-2">
         <input class="phoneInput" [style.border]="correctNumber ? '1px solid black' : '1px solid red'" type="text"
@@ -34,12 +34,11 @@
     </div>
     <div class="row">
       <div class="button-row col-lg-4 offset-lg-4 col-9 offset-2">
-        <button class="numberButton">*</button>
-        <button class="numberButton">0</button>
-        <button class="numberButton">#</button>
+        <button class="numberButton" (click)="buttonClicked('*')">*</button>
+        <button class="numberButton" (click)="buttonClicked(0)">0</button>
+        <button class="numberButton" (click)="buttonClicked('#')">#</button>
       </div>
     </div>
-
     <div class="row">
       <div class="button-row col-lg-4 offset-lg-4 col-6 offset-4">
         <button *ngIf="isActiveCall" class="endCallButton" (click)="endCall()"><i
@@ -48,11 +47,5 @@
         <button class="backspaceButton" (click)="backSpace()"><i class="fas fa-backspace"></i></button>
       </div>
     </div>
-
-
   </div>
-
-
-
-
 </body>
