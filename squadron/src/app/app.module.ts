@@ -12,6 +12,7 @@ import { DemoComponent } from './demo/demo.component';
 import { TipsComponent } from './tips/tips.component';
 import { PhoneComponent } from './phone/phone.component';
 import { AdminComponent } from './admin/admin.component';
+import { ModalModule } from 'ngx-bootstrap/modal';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { AdminComponent } from './admin/admin.component';
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
+    ModalModule.forRoot(),
   ],
   providers: [ {
     provide: LocationStrategy,
