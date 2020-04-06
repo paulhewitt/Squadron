@@ -1,3 +1,15 @@
-<p>
-  admin works!
-</p>
+<div *ngIf="isModalShown" [config]="{ show: true, keyboard: false, ignoreBackdropClick: true }" (onHidden)="onHidden()" bsModal #passwordModal="bs-modal"
+  class="modal fade" tabindex="-1" role="dialog" aria-labelledby="dialog-auto-name">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 id="dialog-auto-name" class="modal-title pull-left">Auto shown modal</h4>
+      </div>
+      <div class="modal-body">
+        <p>I am a modal that is shown right after initialization!</p>
+        <p>I wasn't present in DOM until you clicked the button</p>
+        <p>When you close me, I'll be removed from the DOM</p>
+      </div>
+    </div>
+  </div>
+</div>
