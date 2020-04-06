@@ -11,7 +11,10 @@ export class PhoneComponent implements OnInit {
   constructor(private phoneService: PhoneService) { }
   phoneNumber = '';
   isActiveCall = false;
+  correctNumber = true;
   attempts = 0;
+  interval;
+  callTime = 60;
 
   ngOnInit() {
 
@@ -27,8 +30,12 @@ export class PhoneComponent implements OnInit {
 
   makeCall() {
     console.log(this.phoneNumber);
+    console.log(this.attempts);
     this.attempts++;
     if (this.phoneNumber === '911') {
+      this.isActiveCall = true;
+      this.correctNumber = true;
+      this.startTimer();
       // this.phoneService.makeCall().subscribe(
       //   (call) => {
       //     console.log(call);
@@ -36,12 +43,26 @@ export class PhoneComponent implements OnInit {
       //     console.log(error);
       //   }
       // );
+      this.attempts = 0;
+    } else {
+      this.phoneNumber = '';
+      this.correctNumber = false;
     }
+  }
 
+  startTimer() {
+    this.interval = setInterval(() => {
+      if (this.callTime > 0) {
+        this.callTime--;
+      } else {
+        this.callTime = 0;
+      }
+    }, 1000);
   }
 
   endCall() {
     this.isActiveCall = false;
+    this.callTime = 60;
   }
 
 }

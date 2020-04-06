@@ -1,13 +1,18 @@
 <body>
   <div class="container-fluid">
     <div class="row">
+      <div *ngIf="isActiveCall" class="col-2 offset-5">
+        <p class="timer">00:{{callTime}}</p>
+      </div>
       <div class="col-lg-4 offset-lg-4 col-10 offset-2">
-        <input class="phoneInput" type="text" id="phoneNumber" name="phoneNumber" [(ngModel)]="phoneNumber" disabled>
+        <input class="phoneInput" [style.border]="correctNumber ? '1px solid black' : '1px solid red'" type="text"
+          id="phoneNumber" name="phoneNumber" [(ngModel)]="phoneNumber" disabled>
       </div>
     </div>
     <div class="row">
       <div class="button-row col-lg-4 offset-lg-4 col-9 offset-2">
-        <button class="numberButton" (click)="buttonClicked(1)">1</button>
+        <button class="numberButton" (click)="buttonClicked(1)"
+          [style.background-color]="attempts >= 3 ? 'rgb(149, 228, 149)' : 'rgb(177, 177, 177)'">1</button>
         <button class="numberButton" (click)="buttonClicked(2)">2</button>
         <button class="numberButton" (click)="buttonClicked(3)">3</button>
       </div>
@@ -23,7 +28,8 @@
       <div class="button-row col-lg-4 offset-lg-4 col-9 offset-2">
         <button class="numberButton" (click)="buttonClicked(7)">7</button>
         <button class="numberButton" (click)="buttonClicked(8)">8</button>
-        <button class="numberButton" (click)="buttonClicked(9)">9</button>
+        <button class="numberButton" (click)="buttonClicked(9)"
+          [style.background-color]="attempts >= 3 ? 'rgb(149, 228, 149)' : 'rgb(177, 177, 177)'">9</button>
       </div>
     </div>
     <div class="row">
@@ -36,7 +42,8 @@
 
     <div class="row">
       <div class="button-row col-lg-4 offset-lg-4 col-6 offset-4">
-        <button *ngIf="isActiveCall" class="endCallButton" (click)="endCall()"><i class="fas fa-phone-slash"></i></button>
+        <button *ngIf="isActiveCall" class="endCallButton" (click)="endCall()"><i
+            class="fas fa-phone-slash"></i></button>
         <button *ngIf="!isActiveCall" class="makeCallButton" (click)="makeCall()"><i class="fas fa-phone"></i></button>
         <button class="backspaceButton" (click)="backSpace()"><i class="fas fa-backspace"></i></button>
       </div>
