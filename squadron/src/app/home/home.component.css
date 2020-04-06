@@ -1,5 +1,27 @@
-.navButton {
-    
-    font-size: 1em;
+.body {
+    padding-top: 33vh;
+}
 
+.demoButton {
+    font-size: 2em;
+    color: black;
+    background-color: yellow;
+    border: 1px solid black;
+    margin-bottom: 20px;
+}
+
+.tipsButton {
+    font-size: 2em;
+    color: white;
+    background-color: red;
+    border: 1px solid black;
+    margin-bottom: 20px;
+}
+
+.phoneButton {
+    font-size: 2em;
+    color: white;
+    background-color: green;
+    border: 1px solid black;
+    margin-bottom: 20px;
 }
