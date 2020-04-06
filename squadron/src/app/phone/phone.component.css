@@ -1,11 +1,11 @@
 body {
-  padding-top: 35%;
+  padding-top: 7%;
   background-color: rgba(217, 217, 217, 0.801);
 }
 
 .phoneInput {
   height: 8vh;
-  width: 58vw;
+  width: 32vw;
   margin-bottom: 10%;
   padding-left: 5%;
   border: 1px solid black;
@@ -14,10 +14,10 @@ body {
 .numberButton {
   background-color: rgb(177, 177, 177);
   border-radius: 50%;
-  margin-right: 5%;
+  margin-right: 20%;
   margin-bottom: 5%;
-  /* font-size: 1.25em; */
-  padding: 10%;
+  padding: 5%;
+  font-size: 1.75em;
   border: 1px solid black;
 }
 
@@ -27,8 +27,8 @@ body {
   margin-right: 19%;
   margin-bottom: 5%;
   font-size: 1.25em;
-  padding: 10%;
-  margin-left: 7%;
+  padding: 5%;
+  margin-left: 32%;
   border: 1px solid black;
 }
 
@@ -38,8 +38,8 @@ body {
   margin-right: 12%;
   margin-bottom: 5%;
   font-size: 1.25em;
-  padding: 10%;
-  margin-left: 7%;
+  padding: 5%;
+  margin-left: 32%;
   border: 1px solid black;
 }
 
@@ -55,5 +55,51 @@ body {
 
 .timer {
   text-align: center;
+}
+
+@media only screen and (max-width: 375px) {
+  body {
+    padding-top: 35%;
+  }
+
+  .phoneInput {
+    height: 8vh;
+    width: 58vw;
+    margin-bottom: 10%;
+    padding-left: 5%;
+  }
+
+  .numberButton {
+    margin-right: 5%;
+    margin-bottom: 5%;
+    padding: 10%;
+    border: 1px solid black;
+    font-size: 1em;
+  }
+
+  .makeCallButton {
+    margin-right: 19%;
+    margin-bottom: 5%;
+    font-size: 1.25em;
+    padding: 10%;
+    margin-left: 7%;
+  }
+
+  .endCallButton {
+    margin-right: 12%;
+    margin-bottom: 5%;
+    font-size: 1.25em;
+    padding: 10%;
+    margin-left: 7%;
+  }
+
+  .backspaceButton {
+    margin-right: 5%;
+    margin-bottom: 5%;
+    font-size: 1.25em;
+    padding: 5%;
+  }
+
+  
 }
 
