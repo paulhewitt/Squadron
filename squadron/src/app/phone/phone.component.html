@@ -1,44 +1,44 @@
 <body>
   <div class="container-fluid">
     <div class="row">
-      <div class="col-4 offset-4">
+      <div class="col-lg-4 offset-lg-4 col-10 offset-2">
         <input class="phoneInput" type="text" id="phoneNumber" name="phoneNumber" [(ngModel)]="phoneNumber" disabled>
       </div>
     </div>
     <div class="row">
-      <div class="button-row offset-4">
-        <button (click)="buttonClicked(1)">1</button>
-        <button (click)="buttonClicked(2)">2</button>
-        <button (click)="buttonClicked(3)">3</button>
+      <div class="button-row col-lg-4 offset-lg-4 col-9 offset-2">
+        <button class="numberButton" (click)="buttonClicked(1)">1</button>
+        <button class="numberButton" (click)="buttonClicked(2)">2</button>
+        <button class="numberButton" (click)="buttonClicked(3)">3</button>
       </div>
     </div>
     <div class="row">
-      <div class="button-row offset-4">
-        <button (click)="buttonClicked(4)">4</button>
-        <button (click)="buttonClicked(5)">5</button>
-        <button (click)="buttonClicked(6)">6</button>
+      <div class="button-row col-lg-4 offset-lg-4 col-9 offset-2">
+        <button class="numberButton" (click)="buttonClicked(4)">4</button>
+        <button class="numberButton" (click)="buttonClicked(5)">5</button>
+        <button class="numberButton" (click)="buttonClicked(6)">6</button>
       </div>
     </div>
     <div class="row">
-      <div class="button-row offset-4">
-        <button (click)="buttonClicked(7)">7</button>
-        <button (click)="buttonClicked(8)">8</button>
-        <button (click)="buttonClicked(9)">9</button>
+      <div class="button-row col-lg-4 offset-lg-4 col-9 offset-2">
+        <button class="numberButton" (click)="buttonClicked(7)">7</button>
+        <button class="numberButton" (click)="buttonClicked(8)">8</button>
+        <button class="numberButton" (click)="buttonClicked(9)">9</button>
       </div>
     </div>
     <div class="row">
-      <div class="button-row offset-4">
-        <button>*</button>
-        <button>0</button>
-        <button>#</button>
+      <div class="button-row col-lg-4 offset-lg-4 col-9 offset-2">
+        <button class="numberButton">*</button>
+        <button class="numberButton">0</button>
+        <button class="numberButton">#</button>
       </div>
     </div>
 
     <div class="row">
-      <div class="button-row offset-4">
-        <button>End Call</button>
-        <button (click)="makeCall()">Call</button>
-        <button (click)="backSpace()">Delete</button>
+      <div class="button-row col-lg-4 offset-lg-4 col-6 offset-4">
+        <button *ngIf="isActiveCall" class="endCallButton" (click)="endCall()"><i class="fas fa-phone-slash"></i></button>
+        <button *ngIf="!isActiveCall" class="makeCallButton" (click)="makeCall()"><i class="fas fa-phone"></i></button>
+        <button class="backspaceButton" (click)="backSpace()"><i class="fas fa-backspace"></i></button>
       </div>
     </div>
 
