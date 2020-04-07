@@ -1,5 +1,7 @@
 .body {
     padding-top: 33vh;
+    background-color: cornsilk;
+    height: 100vh;
 }
 
 .demoButton {

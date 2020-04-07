@@ -24,3 +24,8 @@ a {
 .panel-body{
     padding:10px;
 }
+
+.faqs {
+    background-color: cornsilk;
+    height: 100vh;
+}
