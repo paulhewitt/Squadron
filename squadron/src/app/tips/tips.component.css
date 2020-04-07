@@ -1,22 +1,18 @@
-.dropbtn {
+/* .dropbtn {
 	background-color: white;
 	color: #000000;
 	padding: 10px;
 	border-width: 60px;
 	border-style: hidden;
 	cursor: pointer;
-	
 }
 
 .dropbtn:hover, .dropbtn:focus{
  	background-color:#F8F8F8;
 }
 .dropdown {
-	
-	
 	display: inline-block;
 	text-align: center;
-	
 }
 
 .dropdown-content {
@@ -36,7 +32,6 @@
 	display: block;
 }
 
-
 a.questions{
 font-size: 40px;
 border-style: hidden;
@@ -45,4 +40,27 @@ border-style: hidden;
 .dropdown:hover .dropbtn{background-color: grey;}
 .dropdown-content a:hover {background-color: #ddd;}
 
-.show {display: block;}
+.show {display: block;} */
+
+.faqs {
+	padding-top: 25%;
+}
+
+.question-arrow.rotate {
+    transform: rotate(-180deg);
+    transition: .5s;
+}
+
+.question-arrow.rotate-reset {
+    transform: rotate(0deg);
+    transition: .5s;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+.panel-body{
+    padding:10px;
+}
