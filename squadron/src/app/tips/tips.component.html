@@ -1,3 +1,100 @@
-<p>
-  tips works!
-</p>
+<!DOCTYPE html>
+<html>
+<head>
+<title> Fire Safety Tips</title>
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<link rel="stylesheet" type="text/css" href="tips.css">
+</head>
+<body>
+
+<section
+<article>
+<div class="dropdown">
+ <a class="questions"> How can I make a fire Escape plan? </a>
+<button onclick="myFunction()" class="dropbtn"> 
+     <i class="fas fa-chevron-down" style="font-size:46px;"></i>
+    </button>
+  <div class="dropdown-content">
+	<p>  Here are the easy steps to follow to make a home escape plan: </p>
+<ul style="list-style-type:disc;">
+     
+ <li>  Draw a floor plan or a map of your home. Show all doors and windows. </li>
+ <li> Mark two ways out of each room.</li>
+ <li> Mark all of the smoke alarms with SA . Smoke alarms should be in each
+ sleeping room, outside each sleeping area, and on every level of the home.</li>
+ <li> Pick a family meeting place outside where everyone can meet.</li>
+ <li> Remember, practice your plan at least twice a year!</li>
+</ul> 
+</div>
+</div>
+</article>
+</section>  
+
+
+<article>
+<div class="dropdown">
+ <a class="questions"> What do I do in an event of a fire? </a>
+<button class="dropbtn"> 
+     <i class="fas fa-chevron-down" style="font-size:46px;"></i>
+    </button>
+ <div class="dropdown-content">
+<p> If at home, follow your home escape plan. Otherwise, evacuate the building through the designated. </p>
+</div>
+</div>
+</article>
+
+<article>
+<div class="dropdown">
+ <a class="questions"> Who do I call in an event of a fire? </a>
+<button class="dropbtn"> 
+     <i class="fas fa-chevron-down" style="font-size:46px;"></i>
+    </button>
+ <div class="dropdown-content">
+<p> If there is a fire, call 9-1-1. You can call 9-1-1 from a cell phone, pay phone, landline or home phone to notify the
+Regina Fire Department of the fire.</p>
+</div>
+</div>
+</article>
+
+
+<article>
+<div class="dropdown">
+ <a class="questions"> How often should i test my smoke alarm? </a>
+<button class="dropbtn"> 
+     <i class="fas fa-chevron-down" style="font-size:46px;"></i>
+    </button>
+ <div class="dropdown-content">
+<p> Test your smoke alarm monthly </p>
+</div>
+</div>
+</article>
+
+
+
+
+<script type="text/javascript">
+
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+
+
+
+
+</body>
+</html>
