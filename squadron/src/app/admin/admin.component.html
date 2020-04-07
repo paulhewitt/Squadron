@@ -1,14 +1,51 @@
-<div *ngIf="isModalShown" [config]="{ show: true, keyboard: false, ignoreBackdropClick: true }" (onHidden)="onHidden()" bsModal #passwordModal="bs-modal"
-  class="modal fade" tabindex="-1" role="dialog" aria-labelledby="dialog-auto-name">
+<div *ngIf="isModalShown" [config]="{ show: true, keyboard: false, ignoreBackdropClick: true }" (onHidden)="onHidden()"
+  bsModal #passwordModal="bs-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="dialog-auto-name">
   <div class="modal-dialog modal-sm">
     <div class="modal-content">
       <div class="modal-header">
-        <h4 id="dialog-auto-name" class="modal-title pull-left">Auto shown modal</h4>
+        <h4 id="dialog-auto-name" class="modal-title pull-left">Please Enter Admin Password</h4>
       </div>
       <div class="modal-body">
-        <p>I am a modal that is shown right after initialization!</p>
-        <p>I wasn't present in DOM until you clicked the button</p>
-        <p>When you close me, I'll be removed from the DOM</p>
+        <div class="container-fluid">
+          <div class="row">
+            <p class="incorrect" *ngIf="incorrectPassword">Incorrect Password</p>
+            <form (submit)="onSubmit()">
+              Password: <input type="password" class="passInput" name="pass"
+                [style.border]="!incorrectPassword ? '1px solid black' : '1px solid red'" [(ngModel)]="pass">
+              <div class="row buttonRow">
+                <div class="col-3 offset-1">
+                  <button class="cancelButton" [routerLink]="['']">Cancel</button>
+                </div>
+                <div class="col-3 offset-5">
+                  <button type="submit" class="enterButton">Enter</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="body">
+  <div *ngIf="showInput" class="container-fluid">
+    <div class="row textRow">
+      <div class="col-11 offset-1">
+        <h5>Please enter the 11 digit phone number you would like to receive calls at below</h5>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-4 offset-3">
+        <input class="phoneNum" type="text" placeholder="13061234567">
+      </div>
+    </div>
+    <div class="row buttonRow">
+      <div class="col-3 offset-2">
+        <button class="cancelButton">Cancel</button>
+      </div>
+      <div class="col-3 offset-3">
+        <button class="enterButton" [routerLink]="['/phone']">Enter</button>
       </div>
     </div>
   </div>
