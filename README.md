@@ -53,7 +53,7 @@ npm install @angular/cli
 
 ### Running Squadron
 
-Acquire a copy of this repository, and navigate to the frontend code `Squadron/Deliverable #4/Code/squadron`. Run the npm install command found below to download all required dependancies
+Acquire a copy of this repository, and navigate to the frontend code `Squadron/Deliverable #4/Code/squadron`. Run the npm install command found below to download all required dependencies
 ```bash
 npm install
 ```
