@@ -53,13 +53,19 @@ npm install @angular/cli
 
 ### Running Squadron
 
-Acquire a copy of this repository, and navigate to the frontend code `Squadron/Deliverable #4/Code/squadron`. Run the ng serve command found below to start up the application
+Acquire a copy of this repository, and navigate to the frontend code `Squadron/Deliverable #4/Code/squadron`. Run the npm install command found below to download all required dependancies
+```bash
+npm install
+```
+
+Finally, run ng serve to run the appication's front end.
 ```bash
 ng serve
 ```
+
 Navigate to [http://localhost:4200/](http://localhost:4200/) in your web browser. Squadron's front end will be running
 
-In another terminal window, navigate to the backend code `Squadron/Deliverable #4/Code/Backend`. Run the node server command found below to spin up the express server.
+In another terminal window, navigate to the backend code `Squadron/Deliverable #4/Code/Backend`. Run the node server command found below to spin up the express server. You may need to `npm install` again before starting the server
 ```bash
 node server
 ```
