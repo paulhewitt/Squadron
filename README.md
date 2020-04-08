@@ -1,6 +1,6 @@
 <p>
-  <img align="left" src="/uofr_logo.jpg" alt="U of R logo" width="39.055%"/>
-  <img align="right" src="/rfps_logo.png" alt="RFPS logo" width="27.5%"/>
+  <img align="left" src="/uofr_logo.png" alt="U of R logo" width="39.055%"/>
+  <img align="right" src="/rfps_logo.jpeg" alt="RFPS logo" width="27.5%"/>
 </p>
 
 <br/><br/><br/><br/>
