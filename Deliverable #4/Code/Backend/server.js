@@ -13,13 +13,13 @@ app.use(urlencoded({ extended: false }))
 // GET token
 app.get('/token', (request, response) => {
   const capability = new ClientCapability({
-    accountSid: 'Ask Paul for Key',
-    authToken: 'Ask Paul for Key'
+    accountSid: 'Ask Paul',
+    authToken: 'Ask Paul'
   })
 
   capability.addScope(
     new ClientCapability.OutgoingClientScope({
-      applicationSid: 'Ask Paul for Key' })
+      applicationSid: 'Ask Paul' })
   )
 
   const token = capability.toJwt()

@@ -37,13 +37,13 @@ export class PhoneComponent implements OnInit {
       this.isActiveCall = true;
       this.correctNumber = true;
       this.startTimer();
-      // this.phoneService.makeCall().subscribe(
-      //   (call) => {
-      //     console.log(call);
-      //   }, (error) => {
-      //     console.log(error);
-      //   }
-      // );
+      this.phoneService.makeCall().subscribe(
+        (call) => {
+          console.log(call);
+        }, (error) => {
+          console.log(error);
+        }
+      );
       this.attempts = 0;
     } else {
       this.phoneNumber = '';
