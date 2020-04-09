@@ -16,11 +16,11 @@
 * [Deliverable #1](https://github.com/paulhewitt/Squadron/tree/master/Deliverable%20%231)
 * [Deliverable #2](https://github.com/paulhewitt/Squadron/tree/master/Deliverable%20%232)
 * [Deliverable #3](https://github.com/paulhewitt/Squadron/tree/master/Deliverable%20%233)
-* [Deliverable #4]()
-* [Frontend Code]()
-* [Backend Code]()
+* [Deliverable #4](https://github.com/paulhewitt/Squadron/tree/master/Deliverable%20%234)
+* [Frontend Code](https://github.com/paulhewitt/Squadron/tree/master/Deliverable%20%234/Code/squadron)
+* [Backend Code](https://github.com/paulhewitt/Squadron/tree/master/Deliverable%20%234/Code/Backend)
 * [USM](https://github.com/paulhewitt/Squadron/blob/master/Deliverable%20%233/USM.PNG)
-* [Project Presentation]()
+* [Project Presentation](https://github.com/paulhewitt/Squadron/blob/master/Deliverable%20%234/Squadron%20Presentation.pdf)
 * [Project Video]()
       
 ## Project Information
@@ -70,7 +70,7 @@ In another terminal window, navigate to the backend code `Squadron/Deliverable #
 node server
 ```
 
-If you would like to actually use the outgoing call functionality, please send [Paul](mailto:paul@hewitt.dev?subject=SquadronAPI) an email to request an API Key. Due to the sensitive nature of exposing API Keys, they have been omitted from this repository 
+If you would like to actually use the outgoing call functionality, please send [Paul](mailto:paul@hewitt.dev?subject=SquadronAPI) an email to request an API Key. Due to the sensitive nature of exposing API Keys, they have been omitted from this repository. A working demo of the outgoing call functionality can be seen in our presentation video. 
 
 ## User Guide
 
