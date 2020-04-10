@@ -22,6 +22,7 @@
 * [USM](https://github.com/paulhewitt/Squadron/blob/master/Deliverable%20%233/USM.PNG)
 * [Project Presentation](https://github.com/paulhewitt/Squadron/blob/master/Deliverable%20%234/Squadron%20Presentation.pdf)
 * [Project Video](https://www.youtube.com/watch?v=_czCFUGkzno&feature=youtu.be)
+* [User Manual](https://github.com/paulhewitt/Squadron/blob/master/Deliverable%20%234/User%20Manual.pdf)
       
 ## Project Information
 **Project Background**
@@ -74,4 +75,4 @@ If you would like to actually use the outgoing call functionality, please send [
 
 ## User Guide
 
-Once in Squadron, the application is quite self explanatory. In order to change the phone number that recieves phone calls, click on the Admin button in the top right of the screen, and enter in the password. For demo purposes, this password is currently `123`. In order to place a phone call, a user must navigate to the phone module, and that is done by clicking on the green phone button on the main menu. The phone will only make an outgoing call if 911 is successfully entered into the phone dialer by using the key pad buttons. If ever a mistake is made while dialing, the backspace button can be clicked on the bottom right of the keypad. If at anytime a user woud like to return to the home screen, the logo in the top left hand corner of the application can be clicked.
+Once in Squadron, the application is quite self explanatory. In order to change the phone number that recieves phone calls, click on the Admin button in the top right of the screen, and enter in the password. For demo purposes, this password is currently `123`. A more detailed user manual can be found [here](https://github.com/paulhewitt/Squadron/blob/master/Deliverable%20%234/User%20Manual.pdf)
